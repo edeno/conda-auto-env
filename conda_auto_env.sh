@@ -25,6 +25,7 @@ function conda_auto_env() {
         # Create the environment and activate
         conda env create -f environment.yml
         conda activate $ENV
+        python setup.py develop
       fi
     fi
   fi
